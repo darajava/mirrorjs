@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript">
+	window.onerror = function(msg, url, linenumber) {
+    alert('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber);
+    return true;
+}
+document.free = true;
+</script>
+
+<meta name="viewport" content="initial-scale=0.4, user-scalable=no" />
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>  
+<script type="text/javascript" src='./phaser.js'></script>
+<script type="text/javascript" src='./index.js'></script>
+<style>
+body {
+	margin: 0;
+}
+</style>
+</head>
+<body>
+<span id='root'></span>
+<audio
+  src="assets/music.ogg"
+  autoplay
+  loop
+  id="music"
+>
+</audio>
+</body>
+</html>
